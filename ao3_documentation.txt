@@ -1,0 +1,13 @@
+/ao3
+	/exps	
+		/scripts
+			"temporal_tfidf_toprev_conlen_opt.py": current code to compute term novelty
+			"temporal_lda_conlen_toprev_more_filter.py": current code to compute topic novelty
+		/exps: hopefully the folder and notebook names are self explanatory.
+	/data
+		/preprocessed_data
+			/preprocessed_filter_en_merged_chs_20210915: this is the dataset to start with. They have been filtered to keep only the works in English and multi-chapter works are merged into a single entry.
+			/preprocessed_filter_en_merged_chs_20210915_no_crossover: outdated.
+			/preprocessed_filter_en_merged_chs_20211216_no_crossover: removed crossover fictions using the info in /data/subfandom_info and the script "remove_crossover.py". The idea is to check each item in the work's `fandoms` tag and only keep the works where all items are among the top X works in the fandom (since a fandom is often a group of related works).
+		/tfidf_merged_chs_20211216_no_crossover: this is the newest results for term novelty.
+		/lda_merged_chs_20211216_no_crossover: newest results for topic novelty.
